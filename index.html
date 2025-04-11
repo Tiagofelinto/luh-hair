@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento - Luh Hair</title>
+
+    <!-- Fonte chique -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-scissors"></i> Agendamento - Luh Hair</h1>
+
+        <form>
+            <label for="nome">Nome da cliente:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+
+            <label for="data">Escolha a data do agendamento:</label><br>
+            <input type="date" id="data" name="data"><br><br>
+
+
+        </form>
+
+
+        <label for="service"><i class="fa-solid fa-hairdryer"></i> Serviço:</label>
+        <select id="service">
+            <option value="hidratação">Hidratação</option>
+            <option value="escova">Escova</option>
+            <option value="progressiva">Progressiva</option>
+            <option value="selagem">Selagem</option>
+            <option value="botox">Botox</option>
+            <option value="reconstrução">Reconstrução</option>
+            <option value="nutrição">Nutrição</option>
+            <option value="coloração">Coloração</option>
+        </select>
+
+
+
+        <label for="time"><i class="fa-regular fa-clock"></i> Hora:</label>
+        <input type="time" id="time" required>
+
+        <button onclick="agendar()"><i class="fa-regular fa-calendar-check"></i> Agendar</button>
+
+        <div id="confirmacao"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
